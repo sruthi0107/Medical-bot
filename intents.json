@@ -1,0 +1,40 @@
+{
+    "intents":
+    [
+        {
+            "tag":"greetings",
+            "pattern":["hello", "hey", "hi", "what's up", "was up"],
+            "responses":["Hello!" ,"Hey!"]
+        },
+        {
+            "tag":"how are you",
+            "pattern":["How are you", "Epadi irruka", "Hru", "how's life"],
+            "responses":["Nalla irrukaen", "I am fine", "Doing great", "Never better"]
+        },
+        {
+            "tag":"age",
+            "pattern":["How old are you", "what is your age"],
+            "responses":["I am 18 years old", "18"]
+        },
+        {
+            "tag":"college",
+            "pattern":["How's college", "College lam epadi irruku"],
+            "responses":["College is manageable", "college is great", "college nalla irruku"]
+        },
+        {
+            "tag":"goodbye",
+            "pattern":["Goodbye", "Bye da" ,"Bye bye"],
+            "responses":["Bye bye","Have a good day","good bye"]
+        },
+        {
+            "tag":"call",
+            "pattern":["Can i call you right now","shall i call","ipo call panava"],
+            "responses":["yeah! sure","I am a little bit busy right now! I will definetly call you back"]
+        },
+        {
+            "tag":"free",
+            "pattern":["are you free right now","free ya"],
+            "responses":["Yes i am free","Hmm yeah"]
+        }
+    ]
+}
