@@ -1,0 +1,10 @@
+speech to text
+make intents file
+pass the contents of the speech to text to the intents file, get the response
+search based on response
+try the initial link for content, if returned null iterate to the next link
+try all the heading tags from 1 to 6 store it in a array
+find the similarity of the query with the headings given in the array
+sort based on maximum then find the corresponding text
+find the tag based on the text and find the next p tag associated with it
+iterate through the tags untill all the necessary p tags has been scraped.
