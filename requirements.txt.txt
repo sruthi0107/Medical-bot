@@ -1,0 +1,15 @@
+random
+json
+pickle
+numpy 
+speech_recognition
+nltk
+tkinter 
+flask
+requests
+pandas
+bs4
+googlesearch
+sklearn
+sys
+tensorflow
