@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    *{
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+    }
+    body{
+      margin-bottom: 0%;
+      background-image: url("https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1542&q=80");
+      background-size: cover;
+      min-height:100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      backdrop-filter: blur(7px);
+    }
+    h1{
+        margin-top: 0.3rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 140%;
+    }
+    .btn-circle.btn-xl {
+        margin-top: 2rem;
+        width: 100px;
+        height: 100px;
+        padding: 10px 16px;
+        border-radius: 50px;
+        font-size: 16px;
+        text-align: center;
+    }
+    #output{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        font-size: large;
+    }
+</style>
+<body>
+    <script>
+        function loadDoc()
+        {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() 
+            {
+                if (this.readyState == 4 && this.status == 200) 
+                {
+                    document.getElementById("output").innerHTML=""
+                    output=JSON.parse(this.responseText);
+                    string=""
+                    for(var i=0;i<output["text"].length;i++)
+                    {
+                        document.getElementById("output").innerHTML+=output["text"][i]+"<br>"
+                    }
+                }
+            };
+            xhttp.open("GET", "http://127.0.0.1:5000/bot", true);
+            xhttp.send();
+        }
+    </script>
+    <br>
+    <h1><center>Medical Bot</center></h1>
+    <center><p>This bot will capture your speech and give you information about the preliminary health condition.</p>
+    <p>Click the button below to speak</p>
+    <button onclick="loadDoc()" class="btn btn-danger btn-circle btn-xl">Speak</button>
+    <div id="output">The son of Swarup Rani and Motilal Nehru, a prominent lawyer and nationalist statesman, Nehru was a graduate of Trinity College, Cambridge and the Inner Temple, where he trained to be a barrister. Upon his return to India, he enrolled at the Allahabad High Court and took an interest in national politics, which eventually replaced his legal practice. A committed nationalist since his teenage years, he became a rising figure in Indian politics during the upheavals of the 1910s. He became the prominent leader of the left-wing factions of the Indian National Congress during the 1920s, and eventually of the entire Congress, with the tacit approval of his mentor, Mahatma Gandhi. As Congress President in 1929, Nehru called for complete independence from the British Raj and instigated the Congress's decisive shift towards the left.</div></center>
+    <p><br></p>
+</body>
+</html>
