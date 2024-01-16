@@ -1,0 +1,7 @@
+Poisoning-https://healthywa.wa.gov.au/Articles/N_R/Poisoning-first-aid  // working
+Vomiting- https://uhs.umich.edu/diarrheavomiting   //scraping not working
+Burns-https://www.who.int/news-room/fact-sheets/detail/burns  //working
+cold-https://www.medicalnewstoday.com/articles/can-you-get-rid-of-a-cold-fast#symptom-relief   //working
+Diarrhea-https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diarrhoea //working
+Nosebleed-https://www.webmd.com/first-aid/nosebleeds-causes-and-treatments //working
+Sprain-https://www.medicalnewstoday.com/articles/327169#tips-to-aid-healing //working

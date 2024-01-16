@@ -19,12 +19,7 @@
         {
             "tag":"poisoned",
             "pattern":["Someone drank poison, what to do?","What to do when someone drinks poison","What to do when someone gets poisoned"],
-            "responses":["someone got poisoned","What to do while waiting for help"]
-        },
-        {
-            "tag":"vomiting",
-            "pattern":["What can i do if feel like throwing up","I feel like vomiting","I feel like throwing up","Someone feels like throwing up, what do?","What to do when someone throws up?","Someone feels like vomiting, what do?"],
-            "responses":["what to do for vomiting","Self-care for adults:"]
+            "responses":["someone got poisoned","Helping someone who is unconscious"]
         },
         {
             "tag":"burn",
@@ -39,12 +34,12 @@
         {
             "tag":"diarrhea",
             "pattern":["I have diarrhea, what to do?","How to get rid of diarrhea?","Someone has diarrahea, what to do?","What to do when someone has diarrhea?"],
-            "responses":["what to do for diarrhea","What to do if you have diarrhoea"]
+            "responses":["what to do for diarrhea","What to Do About Nutrition When You Have Diarrhea"]
         },
         {
             "tag":"nosebleed",
             "pattern":["What to do if my nose is bleeding?","Someone's nose is bleeding, what to do?","How to stop a nosebleed?","How Do I Stop My Nosebleed?","Nose is bleeding"],
-            "responses":["what to do for nosebleed","How Do I Stop My Nosebleed?"]
+            "responses":["what to do for nosebleed","What to do"]
         },
         {
             "tag":"sprain",
